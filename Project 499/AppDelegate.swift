@@ -9,17 +9,23 @@
 import UIKit
 import Fabric
 import TwitterKit
+import Crashlytics
 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    // A socket is opened to connect with the server
+    //let socket = SocketIOClient(socketURL: NSURL(string:"http://localhost:8081")!)
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Fabric.with([Twitter.self])
+        //Twitter.sharedInstance().startWithConsumerKey("RvTpLLMztv2whCp7MyyMP4tBO", consumerSecret: "lZWfWbesYMfnLrACQQdKnUxgItR9HBpaXghsIWGrBgnf8LEpkU")
+        Fabric.with([Twitter.self, Crashlytics.self])
+        // Connect to the socket
+        //socket.connect()
         return true
     }
 
