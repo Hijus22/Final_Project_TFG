@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 let socket = SocketIOClient(socketURL: NSURL(string:"http://localhost:8081")!)
 var tweetsQ = Queue<String>()
 var NewTweets = false

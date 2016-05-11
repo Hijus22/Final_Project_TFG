@@ -7,24 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090729CD1CE2E79900755553 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729C91CE2E79900755553 /* Fabric.framework */; };
+		090729CE1CE2E79900755553 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729C91CE2E79900755553 /* Fabric.framework */; };
+		090729CF1CE2E79900755553 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729CA1CE2E79900755553 /* TwitterKit.framework */; };
+		090729D01CE2E79900755553 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729CA1CE2E79900755553 /* TwitterKit.framework */; };
+		090729D11CE2E79900755553 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 090729CB1CE2E79900755553 /* TwitterKitResources.bundle */; };
+		090729D21CE2E79900755553 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 090729CB1CE2E79900755553 /* TwitterKitResources.bundle */; };
+		090729D31CE2E79900755553 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729CC1CE2E79900755553 /* TwitterCore.framework */; };
+		090729D41CE2E79900755553 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729CC1CE2E79900755553 /* TwitterCore.framework */; };
+		090729D61CE2E88900755553 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729D51CE2E88900755553 /* Crashlytics.framework */; };
+		090729D71CE2E88900755553 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090729D51CE2E88900755553 /* Crashlytics.framework */; };
 		091954581CD8F0E800858AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954571CD8F0E800858AFC /* AppDelegate.swift */; };
 		0919545A1CD8F0E800858AFC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954591CD8F0E800858AFC /* FirstViewController.swift */; };
-		0919545C1CD8F0E800858AFC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919545B1CD8F0E800858AFC /* SecondViewController.swift */; };
 		0919545F1CD8F0E800858AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0919545D1CD8F0E800858AFC /* Main.storyboard */; };
 		091954611CD8F0E800858AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091954601CD8F0E800858AFC /* Assets.xcassets */; };
-		091954641CD8F0E800858AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091954621CD8F0E800858AFC /* LaunchScreen.storyboard */; };
 		0919546F1CD8F0E800858AFC /* Project_499Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919546E1CD8F0E800858AFC /* Project_499Tests.swift */; };
 		0919547A1CD8F0E800858AFC /* Project_499UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954791CD8F0E800858AFC /* Project_499UITests.swift */; };
-		0919548C1CD9180900858AFC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091954881CD9180900858AFC /* Fabric.framework */; };
-		0919548D1CD9180900858AFC /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091954891CD9180900858AFC /* TwitterKit.framework */; };
-		0919548E1CD9180900858AFC /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0919548A1CD9180900858AFC /* TwitterKitResources.bundle */; };
-		0919548F1CD9180900858AFC /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0919548B1CD9180900858AFC /* TwitterCore.framework */; };
-		091954951CD9766200858AFC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954941CD9766200858AFC /* HomeViewController.swift */; };
 		091954971CD978A900858AFC /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954961CD978A900858AFC /* MoreViewController.swift */; };
 		0919549B1CE1306600858AFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919549A1CE1306600858AFC /* ViewController.swift */; };
 		0919549D1CE1335600858AFC /* YourSportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919549C1CE1335600858AFC /* YourSportViewController.swift */; };
 		0919549F1CE1336500858AFC /* AroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919549E1CE1336500858AFC /* AroundViewController.swift */; };
-		09B838741CE1479D00333BA3 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B838731CE1479D00333BA3 /* Crashlytics.framework */; };
+		0943B39F1CE3067E00414D6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943B39E1CE3067E00414D6D /* HomeViewController.swift */; };
+		0943B3A21CE30E9200414D6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0943B3A11CE30E9200414D6D /* LaunchScreen.xib */; };
+		0943B3A31CE30E9200414D6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0943B3A11CE30E9200414D6D /* LaunchScreen.xib */; };
+		0943B3A41CE30E9200414D6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0943B3A11CE30E9200414D6D /* LaunchScreen.xib */; };
 		09B8387C1CE1A1E500333BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8387B1CE1A1E500333BA3 /* AppDelegate.swift */; };
 		09B8387E1CE1A1E500333BA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8387D1CE1A1E500333BA3 /* ViewController.swift */; };
 		09B838811CE1A1E500333BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B8387F1CE1A1E500333BA3 /* Main.storyboard */; };
@@ -85,10 +91,8 @@
 		09F802821CE1DDA00054603B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F802801CE1DDA00054603B /* LaunchScreen.storyboard */; };
 		09F8028D1CE1DDA00054603B /* Project_499___HTTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8028C1CE1DDA00054603B /* Project_499___HTTPTests.swift */; };
 		09F802981CE1DDA00054603B /* Project_499___HTTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F802971CE1DDA00054603B /* Project_499___HTTPUITests.swift */; };
-		09F802A31CE1DDE80054603B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954941CD9766200858AFC /* HomeViewController.swift */; };
 		09F802A41CE1DDE80054603B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954571CD8F0E800858AFC /* AppDelegate.swift */; };
 		09F802A51CE1DDE80054603B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954591CD8F0E800858AFC /* FirstViewController.swift */; };
-		09F802A61CE1DDE80054603B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919545B1CD8F0E800858AFC /* SecondViewController.swift */; };
 		09F802A71CE1DDE80054603B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919549A1CE1306600858AFC /* ViewController.swift */; };
 		09F802AA1CE1DDE80054603B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091954961CD978A900858AFC /* MoreViewController.swift */; };
 		09F802AB1CE1DDE80054603B /* YourSportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919549C1CE1335600858AFC /* YourSportViewController.swift */; };
@@ -172,13 +176,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090729C91CE2E79900755553 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		090729CA1CE2E79900755553 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		090729CB1CE2E79900755553 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		090729CC1CE2E79900755553 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		090729D51CE2E88900755553 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		091954541CD8F0E700858AFC /* Project 499.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 499.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		091954571CD8F0E800858AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		091954591CD8F0E800858AFC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		0919545B1CD8F0E800858AFC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0919545E1CD8F0E800858AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		091954601CD8F0E800858AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		091954631CD8F0E800858AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		091954651CD8F0E800858AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0919546A1CD8F0E800858AFC /* Project 499Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 499Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0919546E1CD8F0E800858AFC /* Project_499Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_499Tests.swift; sourceTree = "<group>"; };
@@ -186,16 +193,12 @@
 		091954751CD8F0E800858AFC /* Project 499UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 499UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		091954791CD8F0E800858AFC /* Project_499UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_499UITests.swift; sourceTree = "<group>"; };
 		0919547B1CD8F0E800858AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		091954881CD9180900858AFC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		091954891CD9180900858AFC /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		0919548A1CD9180900858AFC /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		0919548B1CD9180900858AFC /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
-		091954941CD9766200858AFC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		091954961CD978A900858AFC /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		0919549A1CE1306600858AFC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0919549C1CE1335600858AFC /* YourSportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourSportViewController.swift; sourceTree = "<group>"; };
 		0919549E1CE1336500858AFC /* AroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroundViewController.swift; sourceTree = "<group>"; };
-		09B838731CE1479D00333BA3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		0943B39E1CE3067E00414D6D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0943B3A11CE30E9200414D6D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		09B838791CE1A1E500333BA3 /* Proyect 499 tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyect 499 tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B8387B1CE1A1E500333BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B8387D1CE1A1E500333BA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -253,10 +256,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0919548C1CD9180900858AFC /* Fabric.framework in Frameworks */,
-				0919548F1CD9180900858AFC /* TwitterCore.framework in Frameworks */,
-				09B838741CE1479D00333BA3 /* Crashlytics.framework in Frameworks */,
-				0919548D1CD9180900858AFC /* TwitterKit.framework in Frameworks */,
+				090729CD1CE2E79900755553 /* Fabric.framework in Frameworks */,
+				090729D31CE2E79900755553 /* TwitterCore.framework in Frameworks */,
+				090729D61CE2E88900755553 /* Crashlytics.framework in Frameworks */,
+				090729CF1CE2E79900755553 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +302,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090729CE1CE2E79900755553 /* Fabric.framework in Frameworks */,
+				090729D41CE2E79900755553 /* TwitterCore.framework in Frameworks */,
+				090729D71CE2E88900755553 /* Crashlytics.framework in Frameworks */,
+				090729D01CE2E79900755553 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +329,6 @@
 		0919544B1CD8F0E700858AFC = {
 			isa = PBXGroup;
 			children = (
-				09B838731CE1479D00333BA3 /* Crashlytics.framework */,
 				091954561CD8F0E800858AFC /* Project 499 */,
 				0919546D1CD8F0E800858AFC /* Project 499Tests */,
 				091954781CD8F0E800858AFC /* Project 499UITests */,
@@ -333,10 +339,11 @@
 				09F8028B1CE1DDA00054603B /* Project 499 - HTTPTests */,
 				09F802961CE1DDA00054603B /* Project 499 - HTTPUITests */,
 				091954551CD8F0E700858AFC /* Products */,
-				091954881CD9180900858AFC /* Fabric.framework */,
-				091954891CD9180900858AFC /* TwitterKit.framework */,
-				0919548A1CD9180900858AFC /* TwitterKitResources.bundle */,
-				0919548B1CD9180900858AFC /* TwitterCore.framework */,
+				090729D51CE2E88900755553 /* Crashlytics.framework */,
+				090729C91CE2E79900755553 /* Fabric.framework */,
+				090729CA1CE2E79900755553 /* TwitterKit.framework */,
+				090729CB1CE2E79900755553 /* TwitterKitResources.bundle */,
+				090729CC1CE2E79900755553 /* TwitterCore.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -359,18 +366,17 @@
 		091954561CD8F0E800858AFC /* Project 499 */ = {
 			isa = PBXGroup;
 			children = (
-				091954941CD9766200858AFC /* HomeViewController.swift */,
 				091954571CD8F0E800858AFC /* AppDelegate.swift */,
+				0943B39E1CE3067E00414D6D /* HomeViewController.swift */,
 				091954591CD8F0E800858AFC /* FirstViewController.swift */,
-				0919545B1CD8F0E800858AFC /* SecondViewController.swift */,
 				0919545D1CD8F0E800858AFC /* Main.storyboard */,
 				0919549A1CE1306600858AFC /* ViewController.swift */,
 				091954601CD8F0E800858AFC /* Assets.xcassets */,
-				091954621CD8F0E800858AFC /* LaunchScreen.storyboard */,
 				091954651CD8F0E800858AFC /* Info.plist */,
 				091954961CD978A900858AFC /* MoreViewController.swift */,
 				0919549C1CE1335600858AFC /* YourSportViewController.swift */,
 				0919549E1CE1336500858AFC /* AroundViewController.swift */,
+				0943B3A11CE30E9200414D6D /* LaunchScreen.xib */,
 				09B838A91CE1A34400333BA3 /* Source */,
 				09F802C71CE1FD510054603B /* Queue.swift */,
 			);
@@ -728,8 +734,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0919548E1CD9180900858AFC /* TwitterKitResources.bundle in Resources */,
-				091954641CD8F0E800858AFC /* LaunchScreen.storyboard in Resources */,
+				0943B3A21CE30E9200414D6D /* LaunchScreen.xib in Resources */,
+				090729D11CE2E79900755553 /* TwitterKitResources.bundle in Resources */,
 				091954611CD8F0E800858AFC /* Assets.xcassets in Resources */,
 				0919545F1CD8F0E800858AFC /* Main.storyboard in Resources */,
 			);
@@ -753,6 +759,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0943B3A31CE30E9200414D6D /* LaunchScreen.xib in Resources */,
 				09B838861CE1A1E500333BA3 /* LaunchScreen.storyboard in Resources */,
 				09B838831CE1A1E500333BA3 /* Assets.xcassets in Resources */,
 				09B838811CE1A1E500333BA3 /* Main.storyboard in Resources */,
@@ -777,6 +784,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0943B3A41CE30E9200414D6D /* LaunchScreen.xib in Resources */,
+				090729D21CE2E79900755553 /* TwitterKitResources.bundle in Resources */,
 				09F802821CE1DDA00054603B /* LaunchScreen.storyboard in Resources */,
 				09F8027F1CE1DDA00054603B /* Assets.xcassets in Resources */,
 				09F8027D1CE1DDA00054603B /* Main.storyboard in Resources */,
@@ -845,7 +854,6 @@
 				09B838D31CE1A34400333BA3 /* SocketEngineWebsocket.swift in Sources */,
 				09B838D51CE1A34400333BA3 /* SocketEventHandler.swift in Sources */,
 				09F802C81CE1FD510054603B /* Queue.swift in Sources */,
-				0919545C1CD8F0E800858AFC /* SecondViewController.swift in Sources */,
 				09B838CB1CE1A34400333BA3 /* SocketEngineClient.swift in Sources */,
 				09B838DD1CE1A34400333BA3 /* SocketIOClientStatus.swift in Sources */,
 				091954581CD8F0E800858AFC /* AppDelegate.swift in Sources */,
@@ -858,9 +866,9 @@
 				09B838ED1CE1A34400333BA3 /* WebSocket.swift in Sources */,
 				0919549F1CE1336500858AFC /* AroundViewController.swift in Sources */,
 				0919545A1CD8F0E800858AFC /* FirstViewController.swift in Sources */,
-				091954951CD9766200858AFC /* HomeViewController.swift in Sources */,
 				09B838D71CE1A34400333BA3 /* SocketIOClient.swift in Sources */,
 				09B838CD1CE1A34400333BA3 /* SocketEnginePacketType.swift in Sources */,
+				0943B39F1CE3067E00414D6D /* HomeViewController.swift in Sources */,
 				09B838E31CE1A34400333BA3 /* SocketParsable.swift in Sources */,
 				09B838D11CE1A34400333BA3 /* SocketEngineSpec.swift in Sources */,
 				09B838C91CE1A34400333BA3 /* SocketEngine.swift in Sources */,
@@ -936,10 +944,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F802A31CE1DDE80054603B /* HomeViewController.swift in Sources */,
 				09F802A41CE1DDE80054603B /* AppDelegate.swift in Sources */,
 				09F802A51CE1DDE80054603B /* FirstViewController.swift in Sources */,
-				09F802A61CE1DDE80054603B /* SecondViewController.swift in Sources */,
 				09F802A71CE1DDE80054603B /* ViewController.swift in Sources */,
 				09F802AA1CE1DDE80054603B /* MoreViewController.swift in Sources */,
 				09F802AB1CE1DDE80054603B /* YourSportViewController.swift in Sources */,
@@ -1035,14 +1041,6 @@
 				0919545E1CD8F0E800858AFC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		091954621CD8F0E800858AFC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				091954631CD8F0E800858AFC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		09B8387F1CE1A1E500333BA3 /* Main.storyboard */ = {
@@ -1318,6 +1316,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Project 499 - HTTP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "my.uri.edu.Project-499---HTTP";
@@ -1329,6 +1331,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Project 499 - HTTP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "my.uri.edu.Project-499---HTTP";
@@ -1455,6 +1461,7 @@
 				09F8029C1CE1DDA00054603B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F8029D1CE1DDA00054603B /* Build configuration list for PBXNativeTarget "Project 499 - HTTPTests" */ = {
 			isa = XCConfigurationList;
@@ -1463,6 +1470,7 @@
 				09F8029F1CE1DDA00054603B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F802A01CE1DDA00054603B /* Build configuration list for PBXNativeTarget "Project 499 - HTTPUITests" */ = {
 			isa = XCConfigurationList;
@@ -1471,6 +1479,7 @@
 				09F802A21CE1DDA00054603B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //Twitter.sharedInstance().startWithConsumerKey("RvTpLLMztv2whCp7MyyMP4tBO", consumerSecret: "lZWfWbesYMfnLrACQQdKnUxgItR9HBpaXghsIWGrBgnf8LEpkU")
         Fabric.with([Twitter.self, Crashlytics.self])
+        //Fabric.with([Twitter.self])
         // Connect to the socket
         //socket.connect()
         return true
