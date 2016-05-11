@@ -20,9 +20,9 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(5, target:self, selector: #selector(FirstViewController.showTweet), userInfo: nil, repeats: true)
-
+        
         // TODO: Base this Tweet ID on some data from elsewhere in your app
         
         
