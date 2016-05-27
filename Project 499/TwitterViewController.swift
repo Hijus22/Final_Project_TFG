@@ -1,17 +1,18 @@
 //
-//  HomeViewController.swift
+//  TwitterViewController.swift
 //  Project 499
 //
-//  Created by Antonio Martinez Garin on 11/5/16.
+//  Created by Antonio Martinez Garin on 13/5/16.
 //  Copyright © 2016 Antonio Martinez Garin. All rights reserved.
 //
 
 import UIKit
 import TwitterKit
 
-class HomeViewController: UITableViewController, TWTRTweetViewDelegate {
+class TwitterViewController: UITableViewController, TWTRTweetViewDelegate {
     let tweetTableReuseIdentifier = "TweetCell"
-    // Holds all the loaded Tweets
+    // Hold all the loaded Tweets
+    
     var tweets: [TWTRTweet] = [] {
         didSet {
             tableView.reloadData()
@@ -20,7 +21,12 @@ class HomeViewController: UITableViewController, TWTRTweetViewDelegate {
     
     var timer = NSTimer()
     var replace = false
-        
+    
+    var style = "light"
+
+    //let tweetIDs = ["20", // @jack's first Tweet
+    //    "510908133917487104"] // our favorite bike Tweet
+    
     override func viewDidLoad() {
         
         // Setup the table view
@@ -39,12 +45,12 @@ class HomeViewController: UITableViewController, TWTRTweetViewDelegate {
         // Load Tweets
         
         client.loadTweetsWithIDs(tweetsQ.items) { tweets, error in
-            
+
             self.tweets = tweets!
         }
         
         timer = NSTimer.scheduledTimerWithTimeInterval(5, target:self, selector: #selector(TwitterViewController.updateTweets), userInfo: nil, repeats: true)
-        
+ 
     }
     
     func updateTweets(){
@@ -63,28 +69,17 @@ class HomeViewController: UITableViewController, TWTRTweetViewDelegate {
     }
     
     
-    func showTweet() {
-        if let id_str = tweetsQ.pop() { // Retrieve a Tweet
-            TWTRAPIClient().loadTweetWithID(id_str) { (tweet, error) in
-                if let unwrappedTweet = tweet {
-                    let tweetView = TWTRTweetView(tweet: unwrappedTweet)
-                    tweetView.center = CGPointMake(self.view.center.x, self.topLayoutGuide.length + tweetView.frame.size.height / 2);
-                    if self.replace {
-                        for view:UIView in self.view.subviews {
-                            if view.isKindOfClass(TWTRTweetView) {
-                                view.removeFromSuperview()
-                            }
-                        }
-                        self.view.addSubview(tweetView)
-                    }else {
-                        self.view.addSubview(tweetView)
-                        self.replace =  true
-                    }
-                } else {
-                    NSLog("Tweet load error: %@", error!.localizedDescription);
-                }
-            }
-        }
+    
+    func refreshFields() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        style = defaults.stringForKey("modeStyle")!
+        print("==>> Style = " + style)
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshFields()
+        updateTweets()
     }
     
     
@@ -100,6 +95,13 @@ class HomeViewController: UITableViewController, TWTRTweetViewDelegate {
         let tweet = tweets[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(tweetTableReuseIdentifier, forIndexPath: indexPath) as! TWTRTweetTableViewCell
         cell.tweetView.delegate = self
+        if style == "light" {
+            print("EL MODO ES LIGHT")
+            cell.tweetView.theme = .Light
+        } else{
+            print("EL MODO ES LIGHT");
+            cell.tweetView.theme = .Dark
+        }
         cell.configureWithTweet(tweet)
         return cell
     }
@@ -107,8 +109,8 @@ class HomeViewController: UITableViewController, TWTRTweetViewDelegate {
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let tweet = tweets[indexPath.row]
         //TWTRTweetTableViewCell.heightForTweet(<#T##tweet: TWTRTweet##TWTRTweet#>, style: <#T##TWTRTweetViewStyle#>, width: <#T##CGFloat#>, showingActions: <#T##Bool#>)
+        
         return TWTRTweetTableViewCell.heightForTweet(tweet, style: TWTRTweetViewStyle.Compact, width: CGRectGetWidth(self.view.bounds), showingActions: false)
         
     }
-
 }

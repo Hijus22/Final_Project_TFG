@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 
 class MoreViewController: UIViewController {
 
@@ -16,9 +17,29 @@ class MoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func goSettings(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string:UIApplicationOpenSettingsURLString)!)
+    }
+    
+    @IBAction func logout(sender: UIButton) {
+        if let userID = Twitter.sharedInstance().sessionStore.session()?.userID {
+            Twitter.sharedInstance().sessionStore.logOutUserID(userID)
+        }
+        
+        self.performSegueWithIdentifier("logout", sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if "logout" == segue.identifier {
+            // Nothing really to do here, since it won't be fired unless
+            // shouldPerformSegueWithIdentifier() says it's ok. In a real app,
+            // this is where you'd pass data to the success view controller.
+        }
     }
     
 

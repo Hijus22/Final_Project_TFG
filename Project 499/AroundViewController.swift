@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import TwitterKit
 
-class AroundViewController: UIViewController {
+class AroundViewController: TWTRTimelineViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let client: TWTRAPIClient
+        if let userID = Twitter.sharedInstance().sessionStore.session()?.userID {
+            client = TWTRAPIClient(userID: userID)
+            // make requests with client
+        } else {
+            client = TWTRAPIClient()
+        }
 
         // Do any additional setup after loading the view.
+        
+        self.dataSource = TWTRSearchTimelineDataSource(searchQuery: "#nba OR nba",APIClient: client)
+
     }
 
     override func didReceiveMemoryWarning() {

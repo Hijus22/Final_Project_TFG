@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import TwitterKit
 
-class YourSportViewController: UIViewController {
+class YourSportViewController: TWTRTimelineViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let client: TWTRAPIClient
+        if let userID = Twitter.sharedInstance().sessionStore.session()?.userID {
+            client = TWTRAPIClient(userID: userID)
+            // make requests with client
+        } else {
+            client = TWTRAPIClient()
+        }
+
+        self.dataSource = TWTRListTimelineDataSource(listSlug: "baloncesto", listOwnerScreenName: "mundodeportivo", APIClient: client)
+        
+        self.showTweetActions = true; // Don't show tweet actions.
     }
 
     override func didReceiveMemoryWarning() {

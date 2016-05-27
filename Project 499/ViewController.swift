@@ -8,9 +8,9 @@
 
 import UIKit
 
-let socket = SocketIOClient(socketURL: NSURL(string:"http://localhost:8081")!)
+let socket = SocketIOClient(socketURL: NSURL(string:"http://localhost:8081")!) // server IP:PORT
 var tweetsQ = Queue<String>()
-var NewTweets = false
+var newTweets = false
 
 class ViewController: UITabBarController {
     
@@ -25,6 +25,8 @@ class ViewController: UITabBarController {
         super.viewDidLoad()
         self.addHandlers()
         socket.connect()
+        
+        
         // appDelegate.socket to retieve the socket from the appDelegate.
         //socket = appDelegate.socket
     }
@@ -45,7 +47,7 @@ class ViewController: UITabBarController {
                 if let name = jsonResult["name"] as? String, message = jsonResult["message"] as? String {
                     print ("name: [\(name)] message: [\(message)]" )
                     tweetsQ.push(name) // PUSH ID_STR
-                    NewTweets = true
+                    newTweets = true
                 }
             }else{
                 print("Cast unsuccessfull")

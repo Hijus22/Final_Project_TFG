@@ -23,19 +23,8 @@ class FirstViewController: UIViewController {
         
         timer = NSTimer.scheduledTimerWithTimeInterval(5, target:self, selector: #selector(FirstViewController.showTweet), userInfo: nil, repeats: true)
         
-        // TODO: Base this Tweet ID on some data from elsewhere in your app
+        // TODO: Change this pull, it is not desirable to do this with mobile data...
         
-        
-        
-        /*
-        // Add a button to the center of the view to show the timeline
-        let button = UIButton(type: .System)
-        button.setTitle("Show Timeline", forState: .Normal)
-        button.sizeToFit()
-        button.center = view.center
-        button.addTarget(self, action: #selector(showTimeline), forControlEvents: [.TouchUpInside])
-        view.addSubview(button)
-        */
     }
 
 
@@ -76,7 +65,7 @@ class FirstViewController: UIViewController {
         // Create done button to dismiss the view controller
         let button = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(dismissTimeline))
         timelineViewControlller.navigationItem.leftBarButtonItem = button
-        // Create a navigation controller to hold the
+        // Create a navigation controller to hold the view
         let navigationController = UINavigationController(rootViewController: timelineViewControlller)
         showDetailViewController(navigationController, sender: self)
     }

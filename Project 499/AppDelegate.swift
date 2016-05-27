@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        //Twitter.sharedInstance().startWithConsumerKey("RvTpLLMztv2whCp7MyyMP4tBO", consumerSecret: "lZWfWbesYMfnLrACQQdKnUxgItR9HBpaXghsIWGrBgnf8LEpkU")
+        //Twitter.sharedInstance().startWithConsumerKey("API KEY", consumerSecret: "API Secret")
         Fabric.with([Twitter.self, Crashlytics.self])
         // Connect to the socket
         //socket.connect()

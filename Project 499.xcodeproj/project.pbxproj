@@ -31,6 +31,8 @@
 		0943B3A21CE30E9200414D6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0943B3A11CE30E9200414D6D /* LaunchScreen.xib */; };
 		0943B3A31CE30E9200414D6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0943B3A11CE30E9200414D6D /* LaunchScreen.xib */; };
 		0943B3A41CE30E9200414D6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0943B3A11CE30E9200414D6D /* LaunchScreen.xib */; };
+		0943B3A61CE3866400414D6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943B3A51CE3866400414D6D /* LoginViewController.swift */; };
+		0943B3A71CE3866400414D6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0943B3A51CE3866400414D6D /* LoginViewController.swift */; };
 		09B8387C1CE1A1E500333BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8387B1CE1A1E500333BA3 /* AppDelegate.swift */; };
 		09B8387E1CE1A1E500333BA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B8387D1CE1A1E500333BA3 /* ViewController.swift */; };
 		09B838811CE1A1E500333BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B8387F1CE1A1E500333BA3 /* Main.storyboard */; };
@@ -121,6 +123,8 @@
 		09F802C21CE1DDE80054603B /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B838BF1CE1A34400333BA3 /* SwiftRegex.swift */; };
 		09F802C31CE1DDE80054603B /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B838C01CE1A34400333BA3 /* WebSocket.swift */; };
 		09F802C81CE1FD510054603B /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F802C71CE1FD510054603B /* Queue.swift */; };
+		09FB9F4F1CE56FEE0053E277 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 09FB9F4E1CE56FEE0053E277 /* Settings.bundle */; };
+		09FB9F511CE61EE80053E277 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FB9F501CE61EE80053E277 /* TwitterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +203,7 @@
 		0919549E1CE1336500858AFC /* AroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AroundViewController.swift; sourceTree = "<group>"; };
 		0943B39E1CE3067E00414D6D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0943B3A11CE30E9200414D6D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		0943B3A51CE3866400414D6D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		09B838791CE1A1E500333BA3 /* Proyect 499 tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyect 499 tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B8387B1CE1A1E500333BA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B8387D1CE1A1E500333BA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +254,8 @@
 		09F802971CE1DDA00054603B /* Project_499___HTTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_499___HTTPUITests.swift"; sourceTree = "<group>"; };
 		09F802991CE1DDA00054603B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09F802C71CE1FD510054603B /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		09FB9F4E1CE56FEE0053E277 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		09FB9F501CE61EE80053E277 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +336,7 @@
 		0919544B1CD8F0E700858AFC = {
 			isa = PBXGroup;
 			children = (
+				09FB9F4E1CE56FEE0053E277 /* Settings.bundle */,
 				091954561CD8F0E800858AFC /* Project 499 */,
 				0919546D1CD8F0E800858AFC /* Project 499Tests */,
 				091954781CD8F0E800858AFC /* Project 499UITests */,
@@ -367,16 +375,18 @@
 			isa = PBXGroup;
 			children = (
 				091954571CD8F0E800858AFC /* AppDelegate.swift */,
-				0943B39E1CE3067E00414D6D /* HomeViewController.swift */,
 				091954591CD8F0E800858AFC /* FirstViewController.swift */,
 				0919545D1CD8F0E800858AFC /* Main.storyboard */,
 				0919549A1CE1306600858AFC /* ViewController.swift */,
 				091954601CD8F0E800858AFC /* Assets.xcassets */,
 				091954651CD8F0E800858AFC /* Info.plist */,
+				0943B3A51CE3866400414D6D /* LoginViewController.swift */,
+				0943B39E1CE3067E00414D6D /* HomeViewController.swift */,
 				091954961CD978A900858AFC /* MoreViewController.swift */,
 				0919549C1CE1335600858AFC /* YourSportViewController.swift */,
 				0919549E1CE1336500858AFC /* AroundViewController.swift */,
 				0943B3A11CE30E9200414D6D /* LaunchScreen.xib */,
+				09FB9F501CE61EE80053E277 /* TwitterViewController.swift */,
 				09B838A91CE1A34400333BA3 /* Source */,
 				09F802C71CE1FD510054603B /* Queue.swift */,
 			);
@@ -736,6 +746,7 @@
 			files = (
 				0943B3A21CE30E9200414D6D /* LaunchScreen.xib in Resources */,
 				090729D11CE2E79900755553 /* TwitterKitResources.bundle in Resources */,
+				09FB9F4F1CE56FEE0053E277 /* Settings.bundle in Resources */,
 				091954611CD8F0E800858AFC /* Assets.xcassets in Resources */,
 				0919545F1CD8F0E800858AFC /* Main.storyboard in Resources */,
 			);
@@ -854,6 +865,7 @@
 				09B838D31CE1A34400333BA3 /* SocketEngineWebsocket.swift in Sources */,
 				09B838D51CE1A34400333BA3 /* SocketEventHandler.swift in Sources */,
 				09F802C81CE1FD510054603B /* Queue.swift in Sources */,
+				0943B3A61CE3866400414D6D /* LoginViewController.swift in Sources */,
 				09B838CB1CE1A34400333BA3 /* SocketEngineClient.swift in Sources */,
 				09B838DD1CE1A34400333BA3 /* SocketIOClientStatus.swift in Sources */,
 				091954581CD8F0E800858AFC /* AppDelegate.swift in Sources */,
@@ -865,6 +877,7 @@
 				09B838E71CE1A34400333BA3 /* SocketTypes.swift in Sources */,
 				09B838ED1CE1A34400333BA3 /* WebSocket.swift in Sources */,
 				0919549F1CE1336500858AFC /* AroundViewController.swift in Sources */,
+				09FB9F511CE61EE80053E277 /* TwitterViewController.swift in Sources */,
 				0919545A1CD8F0E800858AFC /* FirstViewController.swift in Sources */,
 				09B838D71CE1A34400333BA3 /* SocketIOClient.swift in Sources */,
 				09B838CD1CE1A34400333BA3 /* SocketEnginePacketType.swift in Sources */,
@@ -920,6 +933,7 @@
 				09B838CE1CE1A34400333BA3 /* SocketEnginePacketType.swift in Sources */,
 				09B838E61CE1A34400333BA3 /* SocketStringReader.swift in Sources */,
 				09B838DC1CE1A34400333BA3 /* SocketIOClientSpec.swift in Sources */,
+				0943B3A71CE3866400414D6D /* LoginViewController.swift in Sources */,
 				09B838C41CE1A34400333BA3 /* SocketAckEmitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
